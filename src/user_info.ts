@@ -42,10 +42,11 @@ export type GitHubUserActivity = {
   };
 };
 
-export type GitHubUserAll = GitHubUserActivity &
-  GitHubUserIssue &
-  GitHubUserPullRequest &
-  GitHubUserRepository;
+export type GitHubUserAll =
+  & GitHubUserActivity
+  & GitHubUserIssue
+  & GitHubUserPullRequest
+  & GitHubUserRepository;
 export class UserInfo {
   public readonly totalCommits: number;
   public readonly totalFollowers: number;

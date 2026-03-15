@@ -46,7 +46,7 @@ export const queryUserRepository = `
       repositories(first: 50, ownerAffiliations: OWNER, orderBy: {direction: DESC, field: STARGAZERS}) {
         totalCount
         nodes {
-          languages(first: 3, orderBy: {direction:DESC, field: SIZE}) {
+          languages(first: 2, orderBy: {direction:DESC, field: SIZE}) {
             nodes {
               name
             }
@@ -88,7 +88,7 @@ export const queryUserAll = `
       repositories(first: 50, ownerAffiliations: OWNER, orderBy: {direction: DESC, field: STARGAZERS}) {
         totalCount
         nodes {
-          languages(first: 3, orderBy: {direction:DESC, field: SIZE}) {
+          languages(first: 2, orderBy: {direction:DESC, field: SIZE}) {
             nodes {
               name
             }
